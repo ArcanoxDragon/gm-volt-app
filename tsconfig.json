@@ -1,0 +1,22 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "declaration": true,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "es6",
+            "es5"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "build",
+        "rootDir": "src",
+        "target": "es2015"
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ]
+}
