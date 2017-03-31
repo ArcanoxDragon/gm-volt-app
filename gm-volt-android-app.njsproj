@@ -56,9 +56,10 @@
     <Content Include="ios\GMVoltAndroidApp\Info.plist" />
     <Content Include="ios\GMVoltAndroidApp\main.m" />
     <Content Include="package.json" />
+    <Content Include="src\login.tsx" />
+    <Content Include="src\asyncComponent.tsx" />
+    <Content Include="src\status.tsx" />
     <Content Include="tsconfig.json" />
-    <Content Include="typings\modules\react-native\typings.json" />
-    <Content Include="typings\modules\react\typings.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="android\" />
@@ -86,23 +87,15 @@
     <Folder Include="ios\GMVoltAndroidAppTests\" />
     <Folder Include="ios\GMVoltAndroidApp\" />
     <Folder Include="src\" />
-    <Folder Include="typings\" />
-    <Folder Include="typings\globals\" />
-    <Folder Include="typings\globals\node\" />
-    <Folder Include="typings\modules\" />
-    <Folder Include="typings\modules\react-native\" />
-    <Folder Include="typings\modules\react\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app.tsx" />
-    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
-    <TypeScriptCompile Include="typings\index.d.ts" />
-    <TypeScriptCompile Include="typings\modules\react-native\index.d.ts" />
-    <TypeScriptCompile Include="typings\modules\react\index.d.ts" />
+    <TypeScriptCompile Include="src\requester.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
     <Compile Include="index.android.js" />
+    <Compile Include="shim.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
