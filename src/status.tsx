@@ -104,11 +104,11 @@ export class StatusView extends AsyncComponent<Props, State> {
                               </View>
                               <View style={styles.row}>
                                   <Text style={styles.label}>Estimated EV range:</Text>
-                                  <Text style={styles.label}>{chargeStatus.evRange}</Text>
+                                  <Text style={styles.label}>{chargeStatus.evRange} {chargeStatus.evUnit}</Text>
                               </View>
                               <View style={styles.row}>
                                   <Text style={styles.label}>Estimated total range:</Text>
-                                  <Text style={styles.label}>{chargeStatus.totalRange}</Text>
+                                  <Text style={styles.label}>{chargeStatus.totalRange} {chargeStatus.totalUnit}</Text>
                               </View>
                               <Button onPress={() => { this.refreshData(); }}
                                       title={"Refresh"}/>
